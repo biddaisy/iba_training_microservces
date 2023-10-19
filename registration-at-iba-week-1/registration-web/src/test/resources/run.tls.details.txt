@@ -1,0 +1,56 @@
+
+C:\CodeLab\IBA\Microservices\registration-at-iba-week-1\registration-web\src\test\resources>openssl s_client -connect localhost:8443 
+CONNECTED(000001CC)
+---
+Certificate chain
+ 0 s:C = Belarus, ST = Minsk, L = Minsk, O = ibagroup.eu, OU = 4RD_DEPT, CN = server.ibagroup.eu
+   i:C = Belarus, ST = Minsk, L = Minsk, O = ibagroup.eu, OU = 4RD_DEPT, CN = server.ibagroup.eu
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDkzCCAnugAwIBAgIIfdGkFMLdYAkwDQYJKoZIhvcNAQELBQAweDEQMA4GA1UE
+BhMHQmVsYXJ1czEOMAwGA1UECBMFTWluc2sxDjAMBgNVBAcTBU1pbnNrMRQwEgYD
+VQQKEwtpYmFncm91cC5ldTERMA8GA1UECwwINFJEX0RFUFQxGzAZBgNVBAMTEnNl
+cnZlci5pYmFncm91cC5ldTAeFw0yMzAxMjExODMxMjVaFw0zMzAxMTgxODMxMjVa
+MHgxEDAOBgNVBAYTB0JlbGFydXMxDjAMBgNVBAgTBU1pbnNrMQ4wDAYDVQQHEwVN
+aW5zazEUMBIGA1UEChMLaWJhZ3JvdXAuZXUxETAPBgNVBAsMCDRSRF9ERVBUMRsw
+GQYDVQQDExJzZXJ2ZXIuaWJhZ3JvdXAuZXUwggEiMA0GCSqGSIb3DQEBAQUAA4IB
+DwAwggEKAoIBAQDNUv59oYEOaYuuwq4UcFg1yI5JPX/3Ag5gCP8/yyv89zzkUDS7
+i40Z0ENcU2knfgDQ98HxemCGRKz/ojqocR/XQf2p+f8L9BAJNuvCF7IPn6BjLdXs
+X2yWZaxGyckReFlVzjV0Pu1/a5MN+R9cY6IaP8zvR+zm8Uwtj02a7qLOdwjaOKQ7
+ydSst3nn1ey9fCweOK+5l/ijyO6CSb9PPosAyGzJ9gBYwlrM/+AVLKT7n0dM3oci
+xXecrwPXwanZQTKh16Ynji934x47XWE+37udho8iOgTybFc54Y7PY4V5c3jUgxNR
+lFAHBcoKqx8BYo74sRBtiaY5ikzPLmcSBUZPAgMBAAGjITAfMB0GA1UdDgQWBBR1
+FPI7/3jzK3ShZMxDX/9KxmDuuDANBgkqhkiG9w0BAQsFAAOCAQEASU8eq5pqUYYf
+EIl3FLhvoG67W91OB4BlT6BkaV9+dyELbqeXGsZ2A6OJJmqDzt5CMm+5M1hdWZ+m
+B8AR5z98q5h20Xczo++GGj+efEjtCdIqUUbs68ifG8qILAaIH94awtEMSC4Hstge
+oGzofZr/sDVNRBR+lJndQi3eHahTp33NQgZybfLRLYkQOBphOPfW5btsYQPbEvvQ
+/nGcIhDkUhE5qTp4v0Tw0f9HJUUWaAaYzpFXMeGrblw4Sg9h3Cz81B2ZeA0Mib6i
+g/gaLZhW+j+vysYyNHngOYYBrSl14/fSF0sCf96KD13fDwwKaTE8Ma8QJzN82/gm
+m/RYgkMfVA==
+-----END CERTIFICATE-----
+subject=C = Belarus, ST = Minsk, L = Minsk, O = ibagroup.eu, OU = 4RD_DEPT, CN = server.ibagroup.eu
+
+issuer=C = Belarus, ST = Minsk, L = Minsk, O = ibagroup.eu, OU = 4RD_DEPT, CN = server.ibagroup.eu
+
+---
+Acceptable client certificate CA names
+C = Belarus, ST = Minsk, L = Minsk, O = ibagroup.eu, OU = 4RD_DEPT, CN = client.ibagroup.eu
+Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512:ECDSA+SHA1:RSA+SHA1
+Shared Requested Signature Algorithms: ECDSA+SHA256:ECDSA+SHA384:ECDSA+SHA512:Ed25519:Ed448:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA-PSS+SHA256:RSA-PSS+SHA384:RSA-PSS+SHA512:RSA+SHA256:RSA+SHA384:RSA+SHA512
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1664 bytes and written 403 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self signed certificate)
+---

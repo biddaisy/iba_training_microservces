@@ -1,0 +1,2 @@
+1. In this workshop for simplicity we keep keystore and truststore in the same file
+2. However the common practice to have keystore and trusstore in different files, as keystore changes rarely and more secret, and trusstore changes more often and less secret

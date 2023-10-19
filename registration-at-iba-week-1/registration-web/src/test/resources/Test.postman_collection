@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "e77c5240-5938-4798-947a-a64e3c208561",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1529385"
+	},
+	"item": [
+		{
+			"name": "Event Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/registration-web/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Get All  https",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:8443/registration-web/event",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"JWS1\",\r\n    \"name\":\"Java WorkShop #1\",\r\n    \"startDate\":\"2023-01-02\",\r\n    \"endDate\":\"2023-01-30\",\r\n    \"maxNumOfParticipants\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registration-web/event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Create https",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"JWS1\",\r\n    \"name\":\"Java WorkShop #1\",\r\n    \"startDate\":\"2023-01-02\",\r\n    \"endDate\":\"2023-01-30\",\r\n    \"maxNumOfParticipants\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/registration-web/event",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"JWS2\",\r\n    \"name\":\"Java WorkShop #2\",\r\n    \"startDate\":\"2023-01-15\",\r\n    \"endDate\":\"2023-02-15\",\r\n    \"maxNumOfParticipants\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registration-web/event/JWS2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"event",
+						"JWS2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Update https",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Java WorkShop #4\",\r\n    \"startDate\":\"2023-02-22\",\r\n    \"endDate\":\"2023-03-22\",\r\n    \"maxNumOfParticipants\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/registration-web/event/JWS4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"event",
+						"JWS4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"JWS2\",\r\n    \"name\":\"Java WorkShop #2\",\r\n    \"startDate\":\"2023-01-15\",\r\n    \"endDate\":\"2023-02-15\",\r\n    \"maxNumOfParticipants\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registration-web/event/JWS1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"event",
+						"JWS1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event Delete https",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"JWS2\",\r\n    \"name\":\"Java WorkShop #2\",\r\n    \"startDate\":\"2023-01-15\",\r\n    \"endDate\":\"2023-02-15\",\r\n    \"maxNumOfParticipants\":12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/registration-web/event/JWS4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"event",
+						"JWS4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"chatId\": \"1\", \r\n    \"creationTime\":\"2023-01-21T17:01:00\", \r\n    \"email\": \"mramanovich@ibagroup.eu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registration-web/confirmation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"confirmation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation Create https",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"chatId\": \"1\", \r\n    \"creationTime\":\"2023-01-21T17:01:00\", \r\n    \"email\": \"mramanovich@ibagroup.eu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/registration-web/confirmation",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"confirmation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"chatId\": \"1\", \r\n    \"creationTime\":\"2023-01-21T17:01:00\", \r\n    \"email\": \"mramanovich@ibagroup.eu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/registration-web/confirmation/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registration-web",
+						"confirmation",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmation Get https",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1\",\r\n    \"chatId\": \"1\", \r\n    \"creationTime\":\"2023-01-21T17:01:00\", \r\n    \"email\": \"mramanovich@ibagroup.eu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:8443/registration-web/confirmation/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "8443",
+					"path": [
+						"registration-web",
+						"confirmation",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,30 @@
+services: 
+  web-service-14:
+    image: registration-web-14
+    container_name: registration-web-container-14
+    network_mode: bridge
+    build: 
+      dockerfile: Dockerfile.web
+      context: .
+    env_file:
+      - registration-common/src/main/resources/.env 
+    environment:
+      - REGISTRATION_WEB_URL=${REGISTRATION_WEB_URL}
+    ports:
+      - 9094:8080
+      - 9457:8443
+
+  bot-service-14:
+    image: registration-bot-14
+    container_name: registration-bot-container-14
+    network_mode: bridge
+    build: 
+      dockerfile: Dockerfile.bot
+      context: .
+    env_file:
+      - registration-bot/src/main/resources/.env
+      - registration-common/src/main/resources/.env 
+    environment:
+      - REGISTRATION_WEB_URL=${REGISTRATION_WEB_URL}
+    depends_on:
+      - web-service-14
